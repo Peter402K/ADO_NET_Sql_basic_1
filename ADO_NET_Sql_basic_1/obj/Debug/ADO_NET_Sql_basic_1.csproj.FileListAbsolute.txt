@@ -1,6 +1,7 @@
 C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\bin\Debug\ADO_NET_Sql_basic_1.exe.config
 C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\bin\Debug\ADO_NET_Sql_basic_1.exe
 C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\bin\Debug\ADO_NET_Sql_basic_1.pdb
-C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\obj\Debug\ADO_NET_Sql_basic_1.csprojResolveAssemblyReference.cache
 C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\obj\Debug\ADO_NET_Sql_basic_1.exe
 C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\obj\Debug\ADO_NET_Sql_basic_1.pdb
+C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\bin\Debug\TestDatabase.mdf
+C:\Users\kubal\Documents\Visual Studio 2015\Projects\Git_project\ADO_NET_Sql_basic_1\ADO_NET_Sql_basic_1\bin\Debug\TestDatabase_log.ldf
