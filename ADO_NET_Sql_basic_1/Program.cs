@@ -69,6 +69,6 @@ using System.Data.SqlClient;
         mainObj.createTable("TestTable", mainObj.connString);
         mainObj.deleteDataAccordingId("TestTable", mainObj.connString, 3);
         mainObj.deleteDataAccordingId("TestTable", mainObj.connString, 2);
-        Console.WriteLine("Hello Peter Kubala in ADO.NET.");
+        Console.WriteLine("Hello Peter Kubala is program in ADO.NET.");
         }
     }
