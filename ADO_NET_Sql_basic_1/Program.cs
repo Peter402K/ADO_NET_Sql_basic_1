@@ -16,7 +16,7 @@ using System.Data.SqlClient;
             SqlCommand cmd = new SqlCommand("create table " + tableName + "(Id int not null, Name varchar(50), email varchar(50))", conn);
             conn.Open();
             cmd.ExecuteNonQuery();
-            Console.WriteLine("Table " + tableName + " was created.");
+            Console.WriteLine("Table " + tableName + " was created.\n");
             conn.Close();
         }catch(Exception e)
         {
@@ -25,14 +25,50 @@ using System.Data.SqlClient;
 
     }
 
+    public void insertToTable(string tableName, string connstr, int id, string name, string email)
+    {
+        SqlConnection conn;
+        try
+        {
+            conn = new SqlConnection(connstr);
+            SqlCommand cmd = new SqlCommand("insert into " + tableName + "(Id, Name, email)values("+id+",'" + name + "','" + email + "')", conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("Data was inserted successfully.\n");
+            conn.Close();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+    }
 
 
+    public void deleteDataAccordingId(string tableName, string connstr, int id)
+    {
+        SqlConnection conn;
+        try
+        {
+            conn = new SqlConnection(connstr);
+            SqlCommand cmd = new SqlCommand("delete from " + tableName + " where id = '"+id+"'", conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("Data was delete successfully.\n");
+            conn.Close();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+    }
 
 
-        static void Main(string[] args)
+    static void Main(string[] args)
         {
         Program mainObj = new Program();
         mainObj.createTable("TestTable", mainObj.connString);
+        mainObj.deleteDataAccordingId("TestTable", mainObj.connString, 3);
+        mainObj.deleteDataAccordingId("TestTable", mainObj.connString, 2);
         Console.WriteLine("Hello Peter Kubala in ADO.NET.");
         }
     }
